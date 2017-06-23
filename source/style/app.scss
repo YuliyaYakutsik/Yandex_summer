@@ -1,0 +1,7 @@
+//layout setups
+@import 'layout/variables';
+@import 'layout/mixins';
+@import 'layout/style';
+
+//blocks setups
+@import "../blocks/**/*.scss";
