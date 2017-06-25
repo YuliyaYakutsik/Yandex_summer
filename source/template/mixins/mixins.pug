@@ -1,0 +1,9 @@
+mixin newAchiv (achivements)
+	ul.achiv__list
+		- var newAchivements = [] //создаем пустой массив @newAchievements, в который отберем не более первых 100(ста) ачивок
+		- for (var i = 0; i < 100 && i < achivements.length; i++) {newAchivements.push(Object.assign({}, {number:i+1}, achivements[i]));} //положили в массив @newAchievements ачивки
+			each achivement in newAchivements
+				li.achiv__item(style= `border-color:${achivement.color}`, class=`achiv__item_${achivement.color}`)
+					.achiv__block
+						.achiv__img(style= `-webkit-mask-image: url('${achivement.image}'); -webkit-mask-size: 100%; background-color:${achivement.color}`, class=`achiv__img_${achivement.color}`)
+						.achiv__number(style= `border-color:transparent ${achivement.color} ${achivement.color} transparent; color: ${achivement.color}`,class=`achiv__number_${achivement.color}`)= `${achivement.number}`

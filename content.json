@@ -1,0 +1,38 @@
+{
+  "employee1" : [
+    {
+      "image" : "./assets/img/medal.png", 
+      "color": "green"
+    },
+    {
+      "image" : "./assets/img/medal2.png",
+      "color": "red"
+    },
+    {
+      "image" : "./assets/img/medal.png",
+      "color": "black"
+    },
+    {
+      "image" : "./assets/img/medal2.png",
+      "color": "purple"
+    }
+   ],
+  "employee2" : [
+    {
+      "image" : "./assets/img/medal.png", 
+      "color": "orange"
+    },
+    {
+      "image" : "./assets/img/medal2.png",
+      "color": "purple"
+    },
+    {
+      "image" : "./assets/img/medal.png",
+      "color": "black"
+    },
+    {
+      "image" : "./assets/img/medal2.png",
+      "color": "brown"
+    }
+   ]
+}
